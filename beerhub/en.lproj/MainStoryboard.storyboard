@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Yjf-Lf-ERY">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller - My Location-->
+        <scene sceneID="qef-XR-58m">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="gpd-zp-xmN" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="My Location" image="07-map-marker.png" id="vdb-nv-Jpz"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vs3-0C-4fO">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="3mh-Ti-iA3" kind="relationship" relationship="rootViewController" id="QU4-ca-wv9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hqi-JT-cZa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="338" y="-1038"/>
+        </scene>
+        <!--Trg Loc View Controller - Beers: Your Area-->
+        <scene sceneID="2bX-Wd-mX2">
+            <objects>
+                <viewController id="3mh-Ti-iA3" customClass="trgLocViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Iet-DA-kaH">
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="C7q-dd-NSX">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="225" id="Liz-dK-5jO"/>
+                                </constraints>
+                            </mapView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="ias-zV-cvA">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="201" id="Td5-1a-7BD"/>
+                                    <constraint firstAttribute="width" constant="300" id="k2S-IM-ooV"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" id="GbX-kS-LZY">
+                                        <rect key="frame" x="0.0" y="22" width="300" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="280" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3UB-YB-RFW">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="Vpo-py-5Tm"/>
+                                    <constraint firstAttribute="width" constant="53" id="cIb-xy-QNS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Facebook" image="f.jpg">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="facebook:" destination="3mh-Ti-iA3" eventType="touchUpInside" id="PpK-Ad-rAX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PUH-53-ZOg">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="53" id="gfK-Et-34S"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Tw" image="twitter.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="twitter:" destination="3mh-Ti-iA3" eventType="touchUpInside" id="kPS-Lh-GkL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="3UB-YB-RFW" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="4PJ-pd-v2l"/>
+                            <constraint firstItem="C7q-dd-NSX" firstAttribute="centerX" secondItem="Iet-DA-kaH" secondAttribute="centerX" type="default" id="7PQ-SD-Fmm"/>
+                            <constraint firstItem="ias-zV-cvA" firstAttribute="trailing" secondItem="C7q-dd-NSX" secondAttribute="trailing" type="default" id="85x-Tc-HAg"/>
+                            <constraint firstItem="C7q-dd-NSX" firstAttribute="top" secondItem="ias-zV-cvA" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="8E6-vZ-uxy"/>
+                            <constraint firstItem="ias-zV-cvA" firstAttribute="leading" secondItem="C7q-dd-NSX" secondAttribute="leading" type="default" id="Phn-4b-A6S"/>
+                            <constraint firstAttribute="bottom" secondItem="PUH-53-ZOg" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="dzH-50-mrO"/>
+                            <constraint firstItem="3UB-YB-RFW" firstAttribute="leading" secondItem="Iet-DA-kaH" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="fgV-DD-KpF"/>
+                            <constraint firstItem="PUH-53-ZOg" firstAttribute="top" secondItem="3UB-YB-RFW" secondAttribute="top" type="default" id="oAK-aV-aWA"/>
+                            <constraint firstAttribute="trailing" secondItem="PUH-53-ZOg" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="qQ0-vw-Y05"/>
+                            <constraint firstItem="ias-zV-cvA" firstAttribute="top" secondItem="Iet-DA-kaH" secondAttribute="top" constant="11" id="vVF-cm-1zc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Beers: Your Area" id="PNu-Ti-Xid"/>
+                    <connections>
+                        <outlet property="beerList" destination="ias-zV-cvA" id="Dze-wK-A1g"/>
+                        <outlet property="mapView" destination="C7q-dd-NSX" id="VId-MQ-avG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xvH-ET-kvN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="780" y="-1024"/>
+        </scene>
+        <!--Navigation Controller - Styles-->
+        <scene sceneID="nnE-lQ-LAc">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="nap-dL-jwm" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Styles" image="pref.png" id="dY2-wv-nvc"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7Aw-PK-Xup">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ien-N7-5Dg" kind="relationship" relationship="rootViewController" id="2Nv-aG-PLf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KJT-Ey-0cB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="282" y="452"/>
+        </scene>
+        <!--Trg Styles View Controller - Choose Beer Styles-->
+        <scene sceneID="vgV-ob-Km7">
+            <objects>
+                <viewController id="ien-N7-5Dg" customClass="trgStylesViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xYS-vs-fto">
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="z4W-Tk-TZW">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="4DL-WL-gJ1"/>
+                                </constraints>
+                            </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="banner.png" translatesAutoresizingMaskIntoConstraints="NO" id="jhH-Z6-03Z">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="328" id="LRw-Ut-ZSq"/>
+                                    <constraint firstAttribute="width" constant="40" id="f0Z-1W-c48"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jhH-Z6-03Z" firstAttribute="top" secondItem="xYS-vs-fto" secondAttribute="top" type="default" id="1nM-Xp-qrb"/>
+                            <constraint firstItem="z4W-Tk-TZW" firstAttribute="bottom" secondItem="xYS-vs-fto" secondAttribute="bottom" type="default" id="9nU-ym-xNR"/>
+                            <constraint firstItem="z4W-Tk-TZW" firstAttribute="trailing" secondItem="xYS-vs-fto" secondAttribute="trailing" type="default" id="Cim-bi-Zco"/>
+                            <constraint firstItem="jhH-Z6-03Z" firstAttribute="leading" secondItem="xYS-vs-fto" secondAttribute="leading" type="default" id="grF-Mh-ISE"/>
+                            <constraint firstItem="z4W-Tk-TZW" firstAttribute="top" secondItem="xYS-vs-fto" secondAttribute="top" type="default" id="haM-uN-59I"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Choose Beer Styles" id="M2c-Jj-a0P"/>
+                    <connections>
+                        <outlet property="myTableView" destination="z4W-Tk-TZW" id="oOF-Yc-11g"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="irX-Y6-AEb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="734" y="453"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="FZ1-gm-dqO">
+            <objects>
+                <tabBarController definesPresentationContext="YES" id="Yjf-Lf-ERY" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="mc1-yc-foC"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="5DP-3X-Ndn">
+                        <rect key="frame" x="129" y="330" width="163" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="nap-dL-jwm" kind="relationship" relationship="viewControllers" id="Q7h-9S-bdX"/>
+                        <segue destination="gpd-zp-xmN" kind="relationship" relationship="viewControllers" id="WRL-aN-w3e"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lGF-ng-BsX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-371" y="361"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="07-map-marker.png" width="16" height="26"/>
+        <image name="banner.png" width="92" height="696"/>
+        <image name="f.jpg" width="200" height="200"/>
+        <image name="pref.png" width="30" height="30"/>
+        <image name="twitter.png" width="300" height="300"/>
+    </resources>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="trgLocViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/trgLocViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="facebook:"/>
+                <relationship kind="action" name="twitter:"/>
+                <relationship kind="outlet" name="beerList" candidateClass="UITableView"/>
+                <relationship kind="outlet" name="mapView" candidateClass="MKMapView"/>
+            </relationships>
+        </class>
+        <class className="trgStylesViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/trgStylesViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="myTableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

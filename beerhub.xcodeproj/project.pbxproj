@@ -1,0 +1,456 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B64568BC172DD0F8006EFB1C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B64568BB172DD0F8006EFB1C /* UIKit.framework */; };
+		B64568BE172DD0F8006EFB1C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B64568BD172DD0F8006EFB1C /* Foundation.framework */; };
+		B64568C0172DD0F8006EFB1C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B64568BF172DD0F8006EFB1C /* CoreGraphics.framework */; };
+		B64568C6172DD0F8006EFB1C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B64568C4172DD0F8006EFB1C /* InfoPlist.strings */; };
+		B64568C8172DD0F8006EFB1C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B64568C7172DD0F8006EFB1C /* main.m */; };
+		B64568CC172DD0F8006EFB1C /* trgAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B64568CB172DD0F8006EFB1C /* trgAppDelegate.m */; };
+		B64568CE172DD0F8006EFB1C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B64568CD172DD0F8006EFB1C /* Default.png */; };
+		B64568D5172DD0F8006EFB1C /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B64568D3172DD0F8006EFB1C /* MainStoryboard.storyboard */; };
+		B64568F3172DDC6A006EFB1C /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B64568F2172DDC6A006EFB1C /* FacebookSDK.framework */; };
+		B64568F5172DDC73006EFB1C /* FacebookSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B64568F4172DDC73006EFB1C /* FacebookSDKResources.bundle */; };
+		B64568F7172DDC79006EFB1C /* FBUserSettingsViewResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B64568F6172DDC79006EFB1C /* FBUserSettingsViewResources.bundle */; };
+		B64568F9172DDC83006EFB1C /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B64568F8172DDC83006EFB1C /* Accounts.framework */; };
+		B64568FB172DDC89006EFB1C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B64568FA172DDC89006EFB1C /* Security.framework */; };
+		B64568FE172DDCA3006EFB1C /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B64568FC172DDCA3006EFB1C /* AdSupport.framework */; };
+		B64568FF172DDCA3006EFB1C /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B64568FD172DDCA3006EFB1C /* Social.framework */; };
+		B6456901172DDCB5006EFB1C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6456900172DDCB5006EFB1C /* CoreLocation.framework */; };
+		B645691E172E6E4D006EFB1C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B645691D172E6E4D006EFB1C /* Default-568h@2x.png */; };
+		B6456922172E6E7D006EFB1C /* 114.png in Resources */ = {isa = PBXBuildFile; fileRef = B6456921172E6E7D006EFB1C /* 114.png */; };
+		B6456924172E6EAB006EFB1C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6456923172E6EAB006EFB1C /* Default@2x.png */; };
+		B645692B17301A62006EFB1C /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B645692A17301A62006EFB1C /* libsqlite3.0.dylib */; };
+		B645692E17323CAE006EFB1C /* trgLocViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B645692D17323CAE006EFB1C /* trgLocViewController.m */; };
+		B645693117323CBE006EFB1C /* trgSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B645693017323CBE006EFB1C /* trgSearchViewController.m */; };
+		B64569391732A509006EFB1C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B64569381732A508006EFB1C /* QuartzCore.framework */; };
+		B645693B1732A5B1006EFB1C /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B645693A1732A5B0006EFB1C /* MessageUI.framework */; };
+		B645693D1732A64A006EFB1C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B645693C1732A64A006EFB1C /* CoreData.framework */; };
+		B645693F1732A652006EFB1C /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B645693E1732A652006EFB1C /* CoreText.framework */; };
+		B64569421732B466006EFB1C /* beerhub.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B64569401732B465006EFB1C /* beerhub.xcdatamodeld */; };
+		B66304471732BCD50025D45B /* Beer.m in Sources */ = {isa = PBXBuildFile; fileRef = B66304461732BCD50025D45B /* Beer.m */; };
+		B663044A1732BCE40025D45B /* Type.m in Sources */ = {isa = PBXBuildFile; fileRef = B66304491732BCE40025D45B /* Type.m */; };
+		B663044C1732CDC40025D45B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B663044B1732CDC30025D45B /* MapKit.framework */; };
+		B6630451173367930025D45B /* breweries.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6630450173367930025D45B /* breweries.csv */; };
+		B663045A173372E90025D45B /* trgSharedCities.m in Sources */ = {isa = PBXBuildFile; fileRef = B6630459173372E90025D45B /* trgSharedCities.m */; };
+		B6630460173388920025D45B /* trgStylesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B663045F173388910025D45B /* trgStylesViewController.m */; };
+		B66304681733A4D60025D45B /* 07-map-marker.png in Resources */ = {isa = PBXBuildFile; fileRef = B66304671733A4D60025D45B /* 07-map-marker.png */; };
+		B663046B1733A9100025D45B /* pref.png in Resources */ = {isa = PBXBuildFile; fileRef = B66304691733A9100025D45B /* pref.png */; };
+		B663046C1733A9100025D45B /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = B663046A1733A9100025D45B /* search.png */; };
+		B663046E1733AE340025D45B /* banner.png in Resources */ = {isa = PBXBuildFile; fileRef = B663046D1733AE330025D45B /* banner.png */; };
+		B66304701733B00D0025D45B /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = B663046F1733B00D0025D45B /* twitter.png */; };
+		B66304721733B01B0025D45B /* f.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B66304711733B01B0025D45B /* f.jpg */; };
+		B66304791733CA350025D45B /* breweries2.csv in Resources */ = {isa = PBXBuildFile; fileRef = B66304781733CA340025D45B /* breweries2.csv */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B64568B8172DD0F8006EFB1C /* beerhub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = beerhub.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B64568BB172DD0F8006EFB1C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B64568BD172DD0F8006EFB1C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B64568BF172DD0F8006EFB1C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B64568C3172DD0F8006EFB1C /* beerhub-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "beerhub-Info.plist"; sourceTree = "<group>"; };
+		B64568C5172DD0F8006EFB1C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B64568C7172DD0F8006EFB1C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B64568C9172DD0F8006EFB1C /* beerhub-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "beerhub-Prefix.pch"; sourceTree = "<group>"; };
+		B64568CA172DD0F8006EFB1C /* trgAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = trgAppDelegate.h; sourceTree = "<group>"; };
+		B64568CB172DD0F8006EFB1C /* trgAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = trgAppDelegate.m; sourceTree = "<group>"; };
+		B64568CD172DD0F8006EFB1C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		B64568D4172DD0F8006EFB1C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		B64568F2172DDC6A006EFB1C /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
+		B64568F4172DDC73006EFB1C /* FacebookSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = FacebookSDKResources.bundle; path = ../../../Documents/FacebookSDK/FacebookSDK.framework/Versions/A/Resources/FacebookSDKResources.bundle; sourceTree = "<group>"; };
+		B64568F6172DDC79006EFB1C /* FBUserSettingsViewResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = FBUserSettingsViewResources.bundle; path = ../../../Documents/FacebookSDK/FacebookSDK.framework/Versions/A/Resources/FBUserSettingsViewResources.bundle; sourceTree = "<group>"; };
+		B64568F8172DDC83006EFB1C /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		B64568FA172DDC89006EFB1C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		B64568FC172DDCA3006EFB1C /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		B64568FD172DDCA3006EFB1C /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		B6456900172DDCB5006EFB1C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		B645691D172E6E4D006EFB1C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		B6456921172E6E7D006EFB1C /* 114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 114.png; sourceTree = "<group>"; };
+		B6456923172E6EAB006EFB1C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		B645692A17301A62006EFB1C /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		B645692C17323CAE006EFB1C /* trgLocViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = trgLocViewController.h; sourceTree = "<group>"; };
+		B645692D17323CAE006EFB1C /* trgLocViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = trgLocViewController.m; sourceTree = "<group>"; };
+		B645692F17323CBD006EFB1C /* trgSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = trgSearchViewController.h; sourceTree = "<group>"; };
+		B645693017323CBE006EFB1C /* trgSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = trgSearchViewController.m; sourceTree = "<group>"; };
+		B64569381732A508006EFB1C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B645693A1732A5B0006EFB1C /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		B645693C1732A64A006EFB1C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B645693E1732A652006EFB1C /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		B64569411732B466006EFB1C /* beerhub.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = beerhub.xcdatamodel; sourceTree = "<group>"; };
+		B66304451732BCD50025D45B /* Beer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Beer.h; sourceTree = "<group>"; };
+		B66304461732BCD50025D45B /* Beer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Beer.m; sourceTree = "<group>"; };
+		B66304481732BCE40025D45B /* Type.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Type.h; sourceTree = "<group>"; };
+		B66304491732BCE40025D45B /* Type.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Type.m; sourceTree = "<group>"; };
+		B663044B1732CDC30025D45B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		B6630450173367930025D45B /* breweries.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = breweries.csv; sourceTree = "<group>"; };
+		B6630458173372E90025D45B /* trgSharedCities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = trgSharedCities.h; sourceTree = "<group>"; };
+		B6630459173372E90025D45B /* trgSharedCities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = trgSharedCities.m; sourceTree = "<group>"; };
+		B663045E173388910025D45B /* trgStylesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = trgStylesViewController.h; sourceTree = "<group>"; };
+		B663045F173388910025D45B /* trgStylesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = trgStylesViewController.m; sourceTree = "<group>"; };
+		B66304671733A4D60025D45B /* 07-map-marker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "07-map-marker.png"; sourceTree = "<group>"; };
+		B66304691733A9100025D45B /* pref.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pref.png; sourceTree = "<group>"; };
+		B663046A1733A9100025D45B /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search.png; sourceTree = "<group>"; };
+		B663046D1733AE330025D45B /* banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = banner.png; sourceTree = "<group>"; };
+		B663046F1733B00D0025D45B /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter.png; sourceTree = "<group>"; };
+		B66304711733B01B0025D45B /* f.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = f.jpg; sourceTree = "<group>"; };
+		B66304781733CA340025D45B /* breweries2.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = breweries2.csv; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B64568B5172DD0F8006EFB1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B663044C1732CDC40025D45B /* MapKit.framework in Frameworks */,
+				B645693F1732A652006EFB1C /* CoreText.framework in Frameworks */,
+				B645693D1732A64A006EFB1C /* CoreData.framework in Frameworks */,
+				B645693B1732A5B1006EFB1C /* MessageUI.framework in Frameworks */,
+				B64569391732A509006EFB1C /* QuartzCore.framework in Frameworks */,
+				B645692B17301A62006EFB1C /* libsqlite3.0.dylib in Frameworks */,
+				B6456901172DDCB5006EFB1C /* CoreLocation.framework in Frameworks */,
+				B64568FE172DDCA3006EFB1C /* AdSupport.framework in Frameworks */,
+				B64568FF172DDCA3006EFB1C /* Social.framework in Frameworks */,
+				B64568FB172DDC89006EFB1C /* Security.framework in Frameworks */,
+				B64568F9172DDC83006EFB1C /* Accounts.framework in Frameworks */,
+				B64568BC172DD0F8006EFB1C /* UIKit.framework in Frameworks */,
+				B64568BE172DD0F8006EFB1C /* Foundation.framework in Frameworks */,
+				B64568C0172DD0F8006EFB1C /* CoreGraphics.framework in Frameworks */,
+				B64568F3172DDC6A006EFB1C /* FacebookSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B64568AF172DD0F8006EFB1C = {
+			isa = PBXGroup;
+			children = (
+				B6456923172E6EAB006EFB1C /* Default@2x.png */,
+				B6456921172E6E7D006EFB1C /* 114.png */,
+				B645691D172E6E4D006EFB1C /* Default-568h@2x.png */,
+				B64568C1172DD0F8006EFB1C /* beerhub */,
+				B64568BA172DD0F8006EFB1C /* Frameworks */,
+				B64568B9172DD0F8006EFB1C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B64568B9172DD0F8006EFB1C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B64568B8172DD0F8006EFB1C /* beerhub.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B64568BA172DD0F8006EFB1C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B663044B1732CDC30025D45B /* MapKit.framework */,
+				B645693E1732A652006EFB1C /* CoreText.framework */,
+				B645693C1732A64A006EFB1C /* CoreData.framework */,
+				B645693A1732A5B0006EFB1C /* MessageUI.framework */,
+				B64569381732A508006EFB1C /* QuartzCore.framework */,
+				B645692A17301A62006EFB1C /* libsqlite3.0.dylib */,
+				B6456900172DDCB5006EFB1C /* CoreLocation.framework */,
+				B64568FC172DDCA3006EFB1C /* AdSupport.framework */,
+				B64568FD172DDCA3006EFB1C /* Social.framework */,
+				B64568FA172DDC89006EFB1C /* Security.framework */,
+				B64568F8172DDC83006EFB1C /* Accounts.framework */,
+				B64568F6172DDC79006EFB1C /* FBUserSettingsViewResources.bundle */,
+				B64568F4172DDC73006EFB1C /* FacebookSDKResources.bundle */,
+				B64568F2172DDC6A006EFB1C /* FacebookSDK.framework */,
+				B64568BB172DD0F8006EFB1C /* UIKit.framework */,
+				B64568BD172DD0F8006EFB1C /* Foundation.framework */,
+				B64568BF172DD0F8006EFB1C /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B64568C1172DD0F8006EFB1C /* beerhub */ = {
+			isa = PBXGroup;
+			children = (
+				B64568CA172DD0F8006EFB1C /* trgAppDelegate.h */,
+				B64568CB172DD0F8006EFB1C /* trgAppDelegate.m */,
+				B64569401732B465006EFB1C /* beerhub.xcdatamodeld */,
+				B66304451732BCD50025D45B /* Beer.h */,
+				B66304461732BCD50025D45B /* Beer.m */,
+				B66304481732BCE40025D45B /* Type.h */,
+				B66304491732BCE40025D45B /* Type.m */,
+				B64568D3172DD0F8006EFB1C /* MainStoryboard.storyboard */,
+				B645692C17323CAE006EFB1C /* trgLocViewController.h */,
+				B645692D17323CAE006EFB1C /* trgLocViewController.m */,
+				B66304781733CA340025D45B /* breweries2.csv */,
+				B6630450173367930025D45B /* breweries.csv */,
+				B663045E173388910025D45B /* trgStylesViewController.h */,
+				B663045F173388910025D45B /* trgStylesViewController.m */,
+				B6630458173372E90025D45B /* trgSharedCities.h */,
+				B6630459173372E90025D45B /* trgSharedCities.m */,
+				B645692F17323CBD006EFB1C /* trgSearchViewController.h */,
+				B645693017323CBE006EFB1C /* trgSearchViewController.m */,
+				B64568C2172DD0F8006EFB1C /* Supporting Files */,
+			);
+			path = beerhub;
+			sourceTree = "<group>";
+		};
+		B64568C2172DD0F8006EFB1C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B66304711733B01B0025D45B /* f.jpg */,
+				B663046F1733B00D0025D45B /* twitter.png */,
+				B663046D1733AE330025D45B /* banner.png */,
+				B66304691733A9100025D45B /* pref.png */,
+				B663046A1733A9100025D45B /* search.png */,
+				B66304671733A4D60025D45B /* 07-map-marker.png */,
+				B64568C3172DD0F8006EFB1C /* beerhub-Info.plist */,
+				B64568C4172DD0F8006EFB1C /* InfoPlist.strings */,
+				B64568C7172DD0F8006EFB1C /* main.m */,
+				B64568C9172DD0F8006EFB1C /* beerhub-Prefix.pch */,
+				B64568CD172DD0F8006EFB1C /* Default.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B64568B7172DD0F8006EFB1C /* beerhub */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B64568DE172DD0F8006EFB1C /* Build configuration list for PBXNativeTarget "beerhub" */;
+			buildPhases = (
+				B64568B4172DD0F8006EFB1C /* Sources */,
+				B64568B5172DD0F8006EFB1C /* Frameworks */,
+				B64568B6172DD0F8006EFB1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = beerhub;
+			productName = beerhub;
+			productReference = B64568B8172DD0F8006EFB1C /* beerhub.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B64568B0172DD0F8006EFB1C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = trg;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Teddy Guenin";
+			};
+			buildConfigurationList = B64568B3172DD0F8006EFB1C /* Build configuration list for PBXProject "beerhub" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B64568AF172DD0F8006EFB1C;
+			productRefGroup = B64568B9172DD0F8006EFB1C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B64568B7172DD0F8006EFB1C /* beerhub */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B64568B6172DD0F8006EFB1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B64568C6172DD0F8006EFB1C /* InfoPlist.strings in Resources */,
+				B64568CE172DD0F8006EFB1C /* Default.png in Resources */,
+				B64568D5172DD0F8006EFB1C /* MainStoryboard.storyboard in Resources */,
+				B64568F5172DDC73006EFB1C /* FacebookSDKResources.bundle in Resources */,
+				B64568F7172DDC79006EFB1C /* FBUserSettingsViewResources.bundle in Resources */,
+				B645691E172E6E4D006EFB1C /* Default-568h@2x.png in Resources */,
+				B6456922172E6E7D006EFB1C /* 114.png in Resources */,
+				B6456924172E6EAB006EFB1C /* Default@2x.png in Resources */,
+				B6630451173367930025D45B /* breweries.csv in Resources */,
+				B66304681733A4D60025D45B /* 07-map-marker.png in Resources */,
+				B663046B1733A9100025D45B /* pref.png in Resources */,
+				B663046C1733A9100025D45B /* search.png in Resources */,
+				B663046E1733AE340025D45B /* banner.png in Resources */,
+				B66304701733B00D0025D45B /* twitter.png in Resources */,
+				B66304721733B01B0025D45B /* f.jpg in Resources */,
+				B66304791733CA350025D45B /* breweries2.csv in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B64568B4172DD0F8006EFB1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B64568C8172DD0F8006EFB1C /* main.m in Sources */,
+				B64568CC172DD0F8006EFB1C /* trgAppDelegate.m in Sources */,
+				B645692E17323CAE006EFB1C /* trgLocViewController.m in Sources */,
+				B645693117323CBE006EFB1C /* trgSearchViewController.m in Sources */,
+				B64569421732B466006EFB1C /* beerhub.xcdatamodeld in Sources */,
+				B66304471732BCD50025D45B /* Beer.m in Sources */,
+				B663044A1732BCE40025D45B /* Type.m in Sources */,
+				B663045A173372E90025D45B /* trgSharedCities.m in Sources */,
+				B6630460173388920025D45B /* trgStylesViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B64568C4172DD0F8006EFB1C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B64568C5172DD0F8006EFB1C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B64568D3172DD0F8006EFB1C /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B64568D4172DD0F8006EFB1C /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B64568DC172DD0F8006EFB1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B64568DD172DD0F8006EFB1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B64568DF172DD0F8006EFB1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../Documents/FacebookSDK\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "beerhub/beerhub-Prefix.pch";
+				INFOPLIST_FILE = "beerhub/beerhub-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B64568E0172DD0F8006EFB1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../Documents/FacebookSDK\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "beerhub/beerhub-Prefix.pch";
+				INFOPLIST_FILE = "beerhub/beerhub-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B64568B3172DD0F8006EFB1C /* Build configuration list for PBXProject "beerhub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B64568DC172DD0F8006EFB1C /* Debug */,
+				B64568DD172DD0F8006EFB1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B64568DE172DD0F8006EFB1C /* Build configuration list for PBXNativeTarget "beerhub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B64568DF172DD0F8006EFB1C /* Debug */,
+				B64568E0172DD0F8006EFB1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B64569401732B465006EFB1C /* beerhub.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B64569411732B466006EFB1C /* beerhub.xcdatamodel */,
+			);
+			currentVersion = B64569411732B466006EFB1C /* beerhub.xcdatamodel */;
+			path = beerhub.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B64568B0172DD0F8006EFB1C /* Project object */;
+}
